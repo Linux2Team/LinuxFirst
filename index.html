@@ -23,30 +23,5 @@
   </style>
   <body>
     <h1>2조 화이팅</h1>
-    <h3>서비스 살아있는 시간</h3>
-    <h2 id="time"></h2>
   </body>
-
-  <script>
-    const h2 = document.getElementById("time");
-    const time1 = new Date();
-    const hour1 = time1.getHours();
-    const minutes1 = time1.getMinutes();
-    const second1 = time1.getSeconds();
-
-    const calcTime = () => {
-      const time2 = new Date();
-      const hour2 = time2.getHours();
-      const minutes2 = time2.getMinutes();
-      const second2 = time2.getSeconds();
-
-      const t1 = String(hour2 - hour1).padStart(2, "0");
-      const t2 = String(minutes2 - minutes1).padStart(2, "0");
-      const t3 = String(second2 - second1).padStart(2, "0");
-
-      h2.innerText = `${t1}:${t2}:${t3}`;
-    };
-
-    setInterval(calcTime, 1000);
-  </script>
 </html>
